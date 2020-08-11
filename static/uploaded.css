@@ -1,0 +1,84 @@
+/* 页面整体 */
+
+body {
+    margin: auto;
+    max-width: 580px;
+    font-size: 14px;
+    font-family: Helvetica, Arial, sans-serif;
+}
+/* 页脚 */
+footer {
+    color: #888;
+    margin-top: 15px;
+    text-align: center;
+    padding: 10px;
+}
+
+/* 头像 */
+.avatar {
+    width: 40px;
+}
+.poems{
+    white-space: pre-line;
+}
+.div1 {
+    width: 500px;
+    height: 400px;
+    display: table-cell;
+    vertical-align: middle;
+}
+.div1 img{
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin: auto;
+}
+.div2 {
+    width: 500px;
+    height: 400px;
+    display: table-cell;
+    vertical-align: middle;
+}
+.div2 img{
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin: auto;
+}
+.div3 {
+    width: 500px;
+    height: 400px;
+    display: table-cell;
+    vertical-align: middle;
+}
+.div3 img{
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin: auto;
+}
+.div4 {
+    width: 500px;
+    height: 400px;
+    display: table-cell;
+    vertical-align: middle;
+}
+.div4 img{
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin: auto;
+}
+
+.history{
+    white-space: pre-line;
+}
+
+
+
+/* 龙猫图片 */
+.totoro {
+    display: block;
+    margin: 0 auto;
+    height: 100px;
+}

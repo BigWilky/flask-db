@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Poem generator</title>
+    <link rel="icon" href="{{ url_for('static', filename='favicon.png') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='uploaded.css') }}" type="text/css">
+</head>
+<body>
+    <h2>
+        <img alt="Avatar" class="avatar" src="{{ url_for('static', filename='avatar.png') }}">
+        Poem Generator
+    </h2>
+
+    <b>This is a poem generator by image, you can upload a picture to generate a new poem!</b>
+
+    <form action="" enctype='multipart/form-data' method='POST'>
+        <input type="file" name="file" style="margin-top:20px;"/>
+        <br>
+
+        <input type="submit" value="上传" class="button-new" style="margin-top:15px;"/>
+    </form>
+    <div class='div1'>
+        <img src="{{ url_for('static', filename= './images/temp/test.jpg',_t=val1) }}"  alt="Your picture was hijacked by aliens~~">
+    </div>
+    <div class='poems'>
+        <p>Poem：{{poem_output}}！</p>
+
+    </div>
+    <div class='history'>
+        <h2>Newest Three  in history: </h2>
+        <div class='div2'>
+            <img src={{user_data1.image_path}}>
+        </div>
+        <p>Poem：{{user_data1.generated_poems}}</p>
+        <div class='div3'>
+            <img src="{{user_data2.image_path}}">
+        </div>
+        <p>Poem：{{user_data2.generated_poems}}</p>
+        <div class='div4'>
+
+            <img src={{user_data2.image_path}}>
+        </div>
+        <p>Poem：{{user_data3.generated_poems}}</p>
+
+    </div>
+    <img alt="Walking Totoro" class="totoro" src="{{ url_for('static', filename='totoro.gif') }}">
+    <footer>
+        <small>&copy; github <a href="http://helloflask.com/tutorial">Thanks for this code</a></small>
+	</footer>
+</body>
+</html>
